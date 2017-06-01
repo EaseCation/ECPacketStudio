@@ -8,5 +8,5 @@ import java.util.stream.Stream;
  */
 public interface PacketSource {
 
-    Stream<PacketExact> allPackets();
+    Stream<PacketLogNode> allPackets();
 }
