@@ -19,4 +19,6 @@ public interface PacketLogNode {
     PacketSession getPacketSession();
 
     Instant getTimeSent();
+
+    interface Disp {}
 }
