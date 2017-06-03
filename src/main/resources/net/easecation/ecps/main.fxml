@@ -1,6 +1,8 @@
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.TableView?>
-<GridPane fx:controller="net.easecation.ecps.MainController"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <TableView fx:id="tableView"/>
-</GridPane>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:controller="net.easecation.ecps.MainController" xmlns:fx="http://javafx.com/fxml">
+    <TableView  fx:id="tableView" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+                AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+
+    </TableView>
+</AnchorPane>
