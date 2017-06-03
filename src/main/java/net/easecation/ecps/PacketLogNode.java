@@ -1,8 +1,8 @@
 package net.easecation.ecps;
 
-import java.net.InetAddress;
 import java.nio.ByteBuffer;
 import java.time.Instant;
+import java.util.List;
 
 /**
  * By lmlstarqaq http://snake1999.com/
@@ -10,11 +10,13 @@ import java.time.Instant;
  */
 public interface PacketLogNode {
 
-    ByteBuffer getPayload();
+    List<PacketLogNode> subNode();
+
+    long getPacketSize();
+
+    ByteBuffer getPacketPayload();
+
+    PacketSession getPacketSession();
 
     Instant getTimeSent();
-
-    InetAddress addressFrom();
-
-    InetAddress addressTo();
 }
